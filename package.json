@@ -1,0 +1,55 @@
+{
+  "name": "@waslit/auto-config",
+  "version": "1.0.0",
+  "repository": "https://github.com/waslit/auto-config",
+  "author": "Waslit Dev Team <dev@waslit.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "auto": {
+    "name": "Waslit",
+    "email": "dev@waslit.com",
+    "labels": [
+      {
+        "name": "Version: Major",
+        "changelogTitle": "💥  Breaking Change",
+        "description": "Increment the major version when merged",
+        "releaseType": "major"
+      },
+      {
+        "name": "Version: Minor",
+        "changelogTitle": "🚀  Enhancement",
+        "description": "Increment the minor version when merged",
+        "releaseType": "minor"
+      },
+      {
+        "name": "Version: Patch",
+        "changelogTitle": "🐛  Bug Fix",
+        "description": "Increment the patch version when merged",
+        "releaseType": "patch"
+      },
+      {
+        "name": "Skip Release",
+        "description": "Preserve the current version when merged",
+        "releaseType": "skip"
+      },
+      {
+        "name": "Version: Trivial",
+        "changelogTitle": "🏠  Internal",
+        "description": "Changes only affect the internal API",
+        "releaseType": "none"
+      },
+      {
+        "name": "Docs",
+        "changelogTitle": "📝  Documentation",
+        "description": "Changes only affect the documentation",
+        "releaseType": "none"
+      }
+    ],
+    "plugins": [
+      "npm",
+      "released"
+    ]
+  }
+}
